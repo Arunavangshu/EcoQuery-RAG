@@ -116,7 +116,7 @@ def main():
             config.get("llm_model", "gpt-4o-mini"),
         )
 
-        print("Final answer:\n")
+        print("EcoQuery Answer:\n")
         print(answer)
         print("\n---\n")
 

@@ -57,25 +57,24 @@ The system formats percentages with the `%` symbol and includes page citations w
 
 ## 📊 Sample Output
 
-**Query:** "How much can ocean freight reduce emissions compared to air transport?"
+**Query:** What percentage of the materials in Apple products came from recycled sources last year?
 
-**EcoQuery Answer:**
-> "Based on the 2024 Environmental Progress Report, shifting from air to ocean freight significantly reduces emissions for product transport by a large margin. This is consistent with Apple's mobility and logistics disclosures in the report, which highlight lower carbon intensity and greater sustainability benefits from ocean shipping."
+**EcoQuery Answer:** More than 20% of the materials shipped in Apple products came from recycled sources last year [Page 3].
 
-**Source Attribution:** `Apple_Environmental_Progress_Report_2024.pdf` (transportation and logistics sections)
+**Source Attribution:** `Apple_Environmental_Progress_Report_2024.pdf` (recycled materials and sourcing sections)
 
 ## Tested questions
 
 The RAG system has been tested with the following sample questions:
 
-- "What percentage of the materials in Apple products came from recycled sources last year?"
-- "Which product is Apple's first to be made with more than 50 percent recycled material?"
-- "How much can ocean freight reduce emissions compared to air transport?"
-- "What is Apple’s specific target for using recycled cobalt in its batteries, and what is the deadline for this goal?"
-- "What percentage of recycled tungsten, rare earth elements, and aluminum did Apple use in its products in the most recent reporting period?"
-- "How much did Apple reduce its overall greenhouse gas emissions across Scopes 1, 2, and 3 compared to its 2015 baseline?"
-- "How many metric tons of waste did Apple’s suppliers divert from landfills in 2023, and how many facilities are participating in the Zero Waste program?"
-- "What is the percentage of recycled polymers used in the Vision Pro according to the 2024 report?"
+- What percentage of the materials in Apple products came from recycled sources last year?
+- Which product is Apple's first to be made with more than 50 percent recycled material?
+- How much can ocean freight reduce emissions compared to air transport?
+- What is Apple’s specific target for using recycled cobalt in its batteries, and what is the deadline for this goal?
+- What percentage of recycled tungsten, rare earth elements, and aluminum did Apple use in its products in the most recent reporting period?
+- How much did Apple reduce its overall greenhouse gas emissions across Scopes 1, 2, and 3 compared to its 2015 baseline?
+- How many metric tons of waste did Apple’s suppliers divert from landfills in 2023, and how many facilities are participating in the Zero Waste program?
+- What is the percentage of recycled polymers used in the Vision Pro according to the 2024 report?
 
 ## 🛠️ Key Challenges & Solutions
 

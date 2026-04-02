@@ -1,0 +1,6 @@
+pdf_path: data/raw/Apple_Environmental_Progress_Report_2024.pdf
+vector_store_path: data/processed/vector_store.faiss
+chunk_size: 1000
+chunk_overlap: 400
+embedding_model: text-embedding-3-large
+llm_model: gpt-4o-mini

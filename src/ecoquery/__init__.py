@@ -1,0 +1,1 @@
+"""EcoQuery-RAG core package."""

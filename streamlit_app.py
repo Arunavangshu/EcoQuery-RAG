@@ -31,13 +31,11 @@ Question: {question}
 Answer:"""
 
 
-@st.cache_resource
 def load_config():
     with open(CONFIG_PATH, "r", encoding="utf-8") as handle:
         return yaml.safe_load(handle)
 
 
-@st.cache_resource
 def get_retriever(vector_store_path: str):
     return load_retriever(vector_store_path)
 
@@ -119,13 +117,11 @@ def main():
     setup_session_state()
 
     st.markdown("# 🍏 EcoQuery-RAG Streamlit UI")
-    st.markdown(
-        "A beautiful interactive interface for querying Apple’s Environmental Progress Report with the existing EcoQuery RAG engine."
-    )
 
     with st.sidebar:
         st.header("Quick Controls")
         st.write("Use the form below to ask any question about Apple’s environmental report.")
+        st.markdown("[Apple Environmental Progress Report 2024](https://www.apple.com/environment/pdf/Apple_Environmental_Progress_Report_2024.pdf)")
         st.markdown("---")
         st.subheader("Sample questions")
         sample_questions = [
@@ -142,6 +138,7 @@ def main():
         st.write(f"**Model:** {model_name}")
         st.write("**Vector store:** data/processed/vector_store.faiss")
         st.write("**Source PDF:** data/raw/Apple_Environmental_Progress_Report_2024.pdf")
+        st.markdown("[Apple Environmental Progress Report 2024](https://www.apple.com/environment/pdf/Apple_Environmental_Progress_Report_2024.pdf)")
         st.markdown("---")
         st.markdown("Built with Streamlit and OpenAI." )
 

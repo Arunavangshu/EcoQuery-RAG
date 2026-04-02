@@ -34,7 +34,9 @@ EcoQuery-RAG is a Retrieval-Augmented Generation project that loads Apple’s 20
 
 ```bash
 cd EcoQuery-RAG
-python -m pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
 cp .env.example .env
 # then set OPENAI_API_KEY in .env
 ```
@@ -57,8 +59,16 @@ The system formats percentages with the `%` symbol and includes page citations w
 
 ### Streamlit UI
 
+If you activated the project `.venv` above, start Streamlit with:
+
 ```bash
 streamlit run streamlit_app.py
+```
+
+If you want to run Streamlit directly through the local venv interpreter, use:
+
+```bash
+.venv/bin/python3 -m streamlit run streamlit_app.py
 ```
 
 This launches a polished web interface where you can ask questions, see retrieved document snippets, and get an `EcoQuery Answer:` response with citation context.

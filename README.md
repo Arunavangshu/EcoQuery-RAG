@@ -55,6 +55,14 @@ Type questions directly into the prompt. Enter `quit` or `exit` to close the con
 
 The system formats percentages with the `%` symbol and includes page citations where available.
 
+### Streamlit UI
+
+```bash
+streamlit run streamlit_app.py
+```
+
+This launches a polished web interface where you can ask questions, see retrieved document snippets, and get an `EcoQuery Answer:` response with citation context.
+
 ## 📊 Sample Output
 
 **Query:** What percentage of the materials in Apple products came from recycled sources last year?
